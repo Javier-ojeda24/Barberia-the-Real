@@ -33,6 +33,7 @@ h4,
 h5,
 h6 {
   font-family: "Alfa Slab One", cursive;
+  text-transform: uppercase;
 }
 .d-item {
   height: 600px;
@@ -77,4 +78,26 @@ h6 {
   .nosotros .presentacion {
     text-align: center;
   }
+}
+
+.card-group {
+  margin: 0 auto !important;
+}
+
+.card-img-top {
+  width: 100px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.servicios {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url(img/barbero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.card-group .card {
+  box-shadow: 4px 0px 15px #000;
 }
