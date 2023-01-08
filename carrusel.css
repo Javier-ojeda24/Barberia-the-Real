@@ -1,0 +1,24 @@
+.logo {
+  width: 60px;
+  height: 60px;
+}
+
+.bg-gradient {
+  background-color: #968960;
+}
+
+.bg-gradient a {
+  font-family: "Roboto Slab", serif;
+  color: #fff !important;
+  font-size: 18px;
+  font-weight: 400;
+}
+.d-item {
+  height: 600px;
+}
+
+.d-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
