@@ -2,6 +2,9 @@
   width: 60px;
   height: 60px;
 }
+body {
+  background-color: black;
+}
 
 .bg-gradient {
   background-color: #968960;
@@ -13,6 +16,24 @@
   font-size: 18px;
   font-weight: 400;
 }
+.carousel-iner {
+  height: 800px;
+}
+p,
+a,
+span,
+strong {
+  font-family: "Roboto Slab", serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Alfa Slab One", cursive;
+}
 .d-item {
   height: 600px;
 }
@@ -21,4 +42,39 @@
   height: 100%;
   object-fit: cover;
   filter: brightness(0.6);
+}
+
+.nosotros {
+  padding-bottom: 75px;
+  padding-top: 75px;
+}
+.nosotros img {
+  width: 500px;
+  height: 300px;
+}
+.nosotros h1,
+.nosotros p {
+  color: white;
+}
+.nosotros .presentacion {
+  text-align: right;
+}
+.nosotros .row {
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .carousel-iner {
+    height: 300px;
+  }
+  .nosotros {
+    padding-bottom: 45px;
+    padding-top: 45px;
+  }
+  .nosotros img {
+    width: 80%;
+  }
+  .nosotros .presentacion {
+    text-align: center;
+  }
 }
