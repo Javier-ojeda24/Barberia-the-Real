@@ -4,6 +4,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css
+    "
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
@@ -22,9 +27,22 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/script.js" defer></script>
     <title>Barberia</title>
   </head>
   <body>
+    <div class="overlay">
+      <div class="slideshow">
+        <span class="btn-cerrar">&times;</span>
+        <!-- <div class="botones adelante">
+          <i class="mdi mdi-arrow-right-circle-outline"></i>
+        </div>
+        <div class="botones atras">
+          <i class="mdi mdi-arrow-left-circle-outline"></i>
+        </div> -->
+        <img src="" alt="" id="img-slideshow" />
+      </div>
+    </div>
     <nav class="navbar navbar-expand-lg bg-gradient">
       <div class="container">
         <a class="navbar-brand" href="#"
@@ -83,22 +101,34 @@
         <div class="carousel-item active d-item">
           <img src="img/img-4.jpg" class="d-block w-100 d-img" alt="foto 1" />
           <div class="carousel-caption top-0 mt-4">
-            <p class="mt-5 fs-3 text-uppercase">Descubre tu Barberia</p>
-            <h1 class="display-1 fw-bolder text-capitalize">The Real Barber</h1>
+            <p class="mt-5 fs-3 text-uppercase contacto">
+              Descubre tu Barberia
+            </p>
+            <h1 class="display-1 fw-bolder text-capitalize contacto">
+              The Real Barber
+            </h1>
           </div>
         </div>
         <div class="carousel-item d-item">
           <img src="img/img-1.jpg" class="d-block w-100 d-img" alt="foto 1" />
           <div class="carousel-caption top-0 mt-4">
-            <p class="mt-5 fs-3 text-uppercase">Descubre tu Barberia</p>
-            <h1 class="display-1 fw-bolder text-capitalize">The Real Barber</h1>
+            <p class="mt-5 fs-3 text-uppercase contacto">
+              Descubre tu Barberia
+            </p>
+            <h1 class="display-1 fw-bolder text-capitalize contacto">
+              The Real Barber
+            </h1>
           </div>
         </div>
         <div class="carousel-item d-item">
           <img src="img/img-2.jpg" class="d-block w-100 d-img" alt="foto 1" />
           <div class="carousel-caption top-0 mt-4">
-            <p class="mt-5 fs-3 text-uppercase">Descubre tu Barberia</p>
-            <h1 class="display-1 fw-bolder text-capitalize">The Real Barber</h1>
+            <p class="mt-5 fs-3 text-uppercase contacto">
+              Descubre tu Barberia
+            </p>
+            <h1 class="display-1 fw-bolder text-capitalize contacto">
+              The Real Barber
+            </h1>
           </div>
         </div>
       </div>
@@ -128,8 +158,8 @@
     <div class="container nosotros">
       <div class="row">
         <div class="col-sm presentacion">
-          <h1>The Real Barber</h1>
-          <p>
+          <h1 class="contacto">The Real Barber</h1>
+          <p class="segundo">
             Hacemos cortes.Clásico o moderno. Marcamos tendencia combinando
             máquinas y tijeras.
           </p>
@@ -142,13 +172,13 @@
     <!--Cards-->
 
     <div class="servicios">
-      <h2 class="text-light text-center">Servicios</h2>
+      <h2 class="text-center contacto">Servicios</h2>
       <div class="card-group container">
         <div class="card">
           <img src="img/img-tijera.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Corte de Pelo</h5>
-            <p class="card-text">
+            <h5 class="card-title contacto">Corte de Pelo</h5>
+            <p class="card-text segundo">
               Las tijeras de corte se utilizan para realizar cortes y retoques,
               su filo navaja permite crear cortes suaves de manera precisa y se
               desliza fácilmente por el cabello
@@ -158,8 +188,8 @@
         <div class="card">
           <img src="img/img-peine.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Peinado</h5>
-            <p class="card-text">
+            <h5 class="card-title contacto">Peinado</h5>
+            <p class="card-text segundo">
               Los estilos del pelo se usan frecuentemente como seña de identidad
               cultural, social o étnica y pueden reflejar el estatus social y la
               individualidad. Los hombres y las mujeres tienen naturalmente el
@@ -170,8 +200,8 @@
         <div class="card">
           <img src="img/img-cuchilla.jpg" class="card-img-top" alt="..." />
           <div class="card-body">
-            <h5 class="card-title">Corte de Barba</h5>
-            <p class="card-text">
+            <h5 class="card-title contacto">Corte de Barba</h5>
+            <p class="card-text segundo">
               Recortar le da forma a la barba, ya que una barba sin forma es
               solo pelo que sobresale de la cara. Si sigues la forma correcta de
               recortar una barba, tendrás una longitud uniforme por todas partes
@@ -181,5 +211,108 @@
         </div>
       </div>
     </div>
+    <!--Fin de los Servicios-->
+
+    <!--Galeria-->
+    <header class="encabezado">
+      <h1 class="contacto">Galeria</h1>
+    </header>
+    <section class="galeria">
+      <div class="columna">
+        <img src="img/corte-1.jpg" data-img-mostrar="0" alt="" />
+        <img src="img/corte-2.jpg" data-img-mostrar="1" alt="" />
+        <img src="img/corte-3.jpg" data-img-mostrar="2" alt="" />
+        <img src="img/corte-4.jpg" data-img-mostrar="3" alt="" />
+        <img src="img/corte-5.jpg" data-img-mostrar="4" alt="" />
+      </div>
+      <div class="columna">
+        <img src="img/corte-6.jpg" data-img-mostrar="5" alt="" />
+        <img src="img/corte-7.jpg" data-img-mostrar="6" alt="" />
+        <img src="img/corte-8.jpg" data-img-mostrar="7" alt="" />
+        <img src="img/corte-9.jpg" data-img-mostrar="8" alt="" />
+        <img src="img/corte-10.jpg" data-img-mostrar="9" alt="" />
+      </div>
+      <div class="columna">
+        <img src="img/corte-11.jpg" data-img-mostrar="10" alt="" />
+        <img src="img/corte-12.jpg" data-img-mostrar="11" alt="" />
+        <img src="img/corte-13.jpg" data-img-mostrar="12" alt="" />
+        <img src="img/corte-14.jpg" data-img-mostrar="13" alt="" />
+        <img src="img/corte-15.jpg" data-img-mostrar="14" alt="" />
+      </div>
+    </section>
+    <!--Fin de Galeria-->
+
+    <!--Formulario de Contacto-->
+
+    <div class="formulario">
+      <form class="form">
+        <h1 class="form__title contacto">Formulario de Contacto</h1>
+        <div class="form__container">
+          <div class="form__group">
+            <input
+              class="form__input"
+              type="text"
+              id="nombres"
+              placeholder=""
+              autocomplete="off"
+            />
+            <label for="nombre" class="form__label segundo">Nombre</label>
+            <span class="form__line"></span>
+          </div>
+
+          <div class="form__group">
+            <input
+              class="form__input"
+              type="text"
+              id="apellidos"
+              placeholder=""
+              autocomplete="off"
+            />
+            <label for="apellidos" class="form__label segundo">Apellido</label>
+            <span class="form__line"></span>
+          </div>
+        </div>
+
+        <div class="form__input">
+          <textarea
+            name=""
+            id="mensaje"
+            cols="30"
+            rows="10"
+            placeholder="Escriba su mensaje"
+          ></textarea>
+        </div>
+
+        <button id="send" class="form__submit contacto">Enviar</button>
+      </form>
+    </div>
+    <h1 class="contacto">Estamos Acá</h1>
+    <div class="col">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3285.0093778733517!2d-58.48146388521507!3d-34.57862926367721!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb66eda29d07d%3A0x7556ab373e9cc19b!2sAv%20Triunvirato%204135%2C%20C1431FBE%20CABA!5e0!3m2!1ses-419!2sar!4v1673216986696!5m2!1ses-419!2sar"
+        width="100%"
+        height="350"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+    <footer>
+      <img src="./img/logo.jpg" alt="" class="logo" />
+      <div class="social-container">
+        <a href="" class="social-icon"></a>
+        <a href="" class="social-icon"></a>
+        <a href="" class="social-icon"></a>
+      </div>
+      <ul class="foter-menu-container">
+        <li class="menu-item">Legal</li>
+        <li class="menu-item">Cookies</li>
+        <li class="menu-item">Privado</li>
+      </ul>
+      <span class="copy"
+        >&copy;2023, Javier Ojeda todo los derechos reservados</span
+      >
+    </footer>
   </body>
 </html>
