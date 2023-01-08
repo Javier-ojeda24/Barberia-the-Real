@@ -16,6 +16,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" href="img/logo.ico" />
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -65,11 +66,13 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-            <a class="nav-link" href="#">Nosotros</a>
-            <a class="nav-link" href="#">Servicios</a>
-            <a class="nav-link" href="#">Galeria</a>
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link active" aria-current="page" href="#inicio"
+              >Inicio</a
+            >
+            <a class="nav-link" href="#nosotros">Nosotros</a>
+            <a class="nav-link" href="#servicios">Servicios</a>
+            <a class="nav-link" href="#galeria">Galeria</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
           </div>
         </div>
       </div>
@@ -105,7 +108,7 @@
         <div class="carousel-item active d-item">
           <img src="img/img-4.jpg" class="d-block w-100 d-img" alt="foto 1" />
           <div class="carousel-caption top-0 mt-4">
-            <p class="mt-5 fs-3 text-uppercase contacto">
+            <p class="mt-5 fs-3 text-uppercase contacto" id="inicio">
               Descubre tu Barberia
             </p>
             <h1 class="display-1 fw-bolder text-capitalize contacto">
@@ -162,7 +165,7 @@
     <div class="container nosotros">
       <div class="row">
         <div class="col-sm presentacion">
-          <h1 class="contacto">The Real Barber</h1>
+          <h1 class="contacto" id="nosotros">The Real Barber</h1>
           <p class="segundo">
             Hacemos cortes.Clásico o moderno. Marcamos tendencia combinando
             máquinas y tijeras.
@@ -176,7 +179,7 @@
     <!--Cards-->
 
     <div class="servicios">
-      <h2 class="text-center contacto">Servicios</h2>
+      <h2 class="text-center contacto" id="servicios">Servicios</h2>
       <div class="card-group container">
         <div class="card">
           <img src="img/img-tijera.jpg" class="card-img-top" alt="..." />
@@ -219,7 +222,7 @@
 
     <!--Galeria-->
     <header class="encabezado">
-      <h1 class="contacto">Galeria</h1>
+      <h1 class="contacto" id="galeria">Galeria</h1>
     </header>
     <section class="galeria">
       <div class="columna">
@@ -248,7 +251,7 @@
 
     <!--Formulario de Contacto-->
 
-    <div class="formulario">
+    <div class="formulario" id="contacto">
       <form class="form">
         <h1 class="form__title contacto">Formulario de Contacto</h1>
         <div class="form__container">
